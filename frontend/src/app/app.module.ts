@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+
 import { AppComponent } from './app.component';
 import { ProjectListComponent } from './components/project-list/project-list.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
@@ -17,13 +18,14 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot(routes),
+    AppComponent,
     ProjectListComponent,
     TaskListComponent,
     TaskFormComponent

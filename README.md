@@ -28,6 +28,8 @@ Ce projet complet permet de gérer des projets et leurs tâches associées via u
   - GET /tasks/search?status=...
   - GET /tasks/search?title=...
 
+
+  ** Utilisation de Postman pour verification coté backend (Test Api Get Post Put DELETE)
 ---
 
 ## 🌐 Partie 2 : Frontend - Angular

@@ -21,7 +21,7 @@ public class Project {
 
     private Date endDate;
 
-    @OneToMany(mappedBy = "projet", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "project", cascade = CascadeType.ALL, orphanRemoval = true)
     List<Task> tasks =new ArrayList<>();
 
     public String getName() {

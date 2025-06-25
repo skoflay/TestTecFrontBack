@@ -14,7 +14,7 @@ public class Task {
 
     private String Title;
     private String description;
-    private String Status;
+    private String status;
     private Date dueDate;
 
     @ManyToOne
@@ -39,11 +39,11 @@ public class Task {
     }
 
     public String getStatus() {
-        return Status;
+        return status;
     }
 
     public void setStatus(String status) {
-        Status = status;
+        this.status = status;
     }
 
     public Date getDueDate() {
