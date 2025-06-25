@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>Projects</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let project of projects">
+        <td>{{ project.name }}</td>
+        <td>{{ project.description }}</td>
+        <td>
+          <button class="btn btn-primary" (click)="viewTasks(project.id!)">View Tasks</button>
+          <button class="btn btn-danger" (click)="deleteProject(project.id!)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
