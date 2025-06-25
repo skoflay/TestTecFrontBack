@@ -53,7 +53,7 @@ public class ProjectController {
         return projectService.getTasksByProjectId(id, page, size);
     }
 
-    @GetMapping("/search")
+    @GetMapping("/tasks/search")
     public List<Task> searchTasks(
             @RequestParam(required = false) String status,
             @RequestParam(required = false) String title) {
